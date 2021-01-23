@@ -10,17 +10,81 @@
 }
 
 .header {
+  position: relative;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* parameters for the header section */
+  display: flex; /*justify center flex-direction:column*/
+  align-items: center;
+  background-color:#f2f2f2;
+  overflow: hidden;
 }
 
+.header__title {
+  width: 730px;
+  margin-left: 64px;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  z-index: 1;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  z-index: 1;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header-link {
+  color: #2f80ed;
+  transition:.7s;
+}
+
+.header-link:hover {
+  opacity: .6;
+}
+
+.header__main-illustration {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-size: 70%;
+  z-index: 1;
+}
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+  z-index: 0;
 }
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  background-size: cover;
+}
+
+.logo_place_header {
+  width: 154px;
+  height: 31px;
+  background-image: url(../images/logo_place_header.png);
+}
+
 
 /* including elements with key-value modifiers */
 .table__cell_theme_dark {
