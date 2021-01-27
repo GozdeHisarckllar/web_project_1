@@ -5,9 +5,8 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.link {  
-  text-decoration: none;
-  color: #2f80ed;
+.link-effect:hover {  
+  opacity: .6;
 }
 
 /* Header */
@@ -40,7 +39,8 @@
 
 .header__title {
   position: relative;
-  width: 730px;
+  max-width: 730px;
+  width: 100%;
   margin: 0 0 0 64px;
   font-size: 102px;
   font-weight: bold;
@@ -49,7 +49,7 @@
 }
 
 .header__subtitle {
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   left: 64px;
   bottom: 30px;
@@ -58,6 +58,12 @@
   font-weight: normal;
   line-height: 25px;
   z-index: 2;   
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+  transition: .4s;
 }
 
 .header__main-illustration {
@@ -94,7 +100,8 @@
 }
 
 .two-columns__brief {
-  width: 175px;
+  max-width: 175px;
+  width: 100%;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
@@ -152,10 +159,12 @@
 .table {
   width: 1100px;
   margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  list-style: none;
 }
 
 .table__cell {
@@ -182,7 +191,7 @@
 /* Feynman */
 
 .feynman {
-  height: 790px;
+  min-height: 790px;
   position: relative;
   padding-top: 100px;
   background-color: #f2f2f2; 
@@ -190,7 +199,8 @@
 
 .feynman__title {
   position: relative;
-  width: 775px;
+  max-width: 775px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   font-size: 120px;
@@ -226,6 +236,9 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
+  text-decoration: none;
+  color: #2f80ed;
+  transition: .4s;
   z-index: 1;
 }
 
@@ -280,6 +293,7 @@
 .footer { 
   position: relative;
   min-height: 350px;
+  display: flex;
   background-color: #1f1f1f;
   box-sizing: border-box;
   padding:60px 0 40px 0;
@@ -290,14 +304,16 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  min-height: 250px;
+}
+
+.footer__column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -317,9 +333,6 @@
 }
 
 .footer__column_content_info {
-  position: relative;
-  display: flex;
-  flex-direction: column;
   justify-content: flex-start;
 }
 
@@ -336,12 +349,18 @@
   font-weight: normal;
   line-height: 30px;
   list-style: none;
-  padding-left: 0;
+  padding: 0;
   margin: 0 0 16px 0;
 }
 
 .footer__column-link {
   color: #f2f2f2;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.footer__column_content_social {
+  justify-content: flex-start;
 }
 
 .footer__social-icon {
