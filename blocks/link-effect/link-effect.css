@@ -2,6 +2,6 @@
     transition: opacity .4s ease-in-out;
   }
   
-  .link-effect:hover {  
+.link-effect:hover {  
     opacity: .6;
-  }
+}

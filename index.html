@@ -76,13 +76,13 @@
         <h2 class="section-title">TED talks</h2>
         <p class="section-subtitle">For lovers of procrastination</p>
         <ul class="video__iframes">
-          <li class="video__iframe">
-            <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen>Sorry, your browser does not support inline frames.</iframe>
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
           </li>
-          <li class="video__iframe">
-            <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-            gyroscope; picture-in-picture" allowfullscreen>Sorry, your browser does not support inline frames.</iframe>
+          <li>
+            <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+            gyroscope; picture-in-picture" allowfullscreen></iframe>
           </li>
         </ul>
       </section>
@@ -152,16 +152,16 @@
         <article class="khan__container">
           <p class="khan__author">Salman Khan </p>
           <h2 class="khan__title">The One World Schoolhouse</h2>
-          <p class="khan__quote">Sal Khan's passion and innovation is transforming learning for millions of 
+          <blockquote class="khan__blockquote">
+            <p class="khan__quote">Sal Khan's passion and innovation is transforming learning for millions of 
             students worldwide. The One World Schoolhouse is a must-read for all 
             who are committed to improving education so students everywhere can 
             gain the skills and knowledge to be successful in school, careers and life.</p>
+          </blockquote>
           <p class="khan__quote-author">George Lucas</p>
           <p class="khan__quote-author-subline">Filmmaker</p>
           <div class="khan__book-container">
-            <div class="khan__book-pic-container">
-              <img class="khan__book-pic" src="./images/khan-book-2.png" alt="the cover of the book written by Salman Khan">
-            </div>
+            <img class="khan__book-pic" src="./images/khan-book-2.png" alt="the cover of the book written by Salman Khan">
             <a class="khan__buy-link link-effect" href="#">Buy book →</a>
           </div>
         </article>
@@ -217,10 +217,18 @@
         <h2 class="section-title">Useful resources</h2>
         <p class="section-subtitle">Further materials on learning techniques and hacks.</p>
         <ul class="resources__logo-zone">
-          <li><img class="resources__logo" src="./images/resources-tedED.png" alt="tedED logo"></li>
-          <li><img class="resources__logo" src="./images/resources-Medium.png" alt="Medium logo"></li>
-          <li><img class="resources__logo" src="./images/resources-dezeen.png" alt="dezeen logo"></li>
-          <li><img class="resources__logo" src="./images/resources-goodreads.png" alt="goodreads logo"></li>
+          <li>
+            <a class="resources__logo-link link-effect" href="https://ed.ted.com/" target="_blank"><img class="resources__logo" src="./images/resources-tedED.png" alt="tedED logo"></a>
+          </li>
+          <li>
+            <a class="resources__logo-link link-effect" href="https://medium.com/" target="_blank"><img class="resources__logo" src="./images/resources-Medium.png" alt="Medium logo"></a>
+          </li>
+          <li>
+            <a class="resources__logo-link link-effect" href="https://www.dezeen.com/" target="_blank"><img class="resources__logo" src="./images/resources-dezeen.png" alt="dezeen logo"></a>
+          </li>
+          <li>
+            <a class="resources__logo-link link-effect" href="https://www.goodreads.com/" target="_blank"><img class="resources__logo" src="./images/resources-goodreads.png" alt="goodreads logo"></a>
+          </li>
         </ul>
       </section>
     </main>
